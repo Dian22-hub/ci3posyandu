@@ -1,0 +1,10 @@
+<div class="col-md-6">
+                  <label for="" class="form-label">Nama Layanan</label>
+                  <select name="vaksin_id" class="form-select" required>
+                            <option selected disabled value="">-----Input Layanan-----</option>
+                            <?php
+                            foreach ($vaksin as $v) { ?>
+                                <option value="<?= $v['id_vaksin'];?>"><?= $v['nama_vaksin'];?></option>
+                            <?php } ?>
+                            </select> 
+                    </div>
